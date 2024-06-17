@@ -8,12 +8,14 @@ Justin Yu
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="keywords" content="michael jordan, michael jordan quotes, michael jordan game winners">
+    <meta name="description" content="this website is about michael jordan's quotes and his game winners">
+    <title>Michael Jordan Quotes and Game Winners</title>
 </head>
 
 <body>
     <header>
-        <h1></h1>
+        <h1>Michael Jordan's Famous Quotes, Game Winners, and Teammates</h1>
     </header>
     <main>
         <section id="main-sec-1">
@@ -109,10 +111,10 @@ Justin Yu
                 <li><a href="https://en.wikipedia.org/wiki/Dennis_Rodman" target="_blank">Dennis Rodman</a></li>
                 <li><a href="https://en.wikipedia.org/wiki/Toni_Kuko%C4%8D" target="_blank">Toni_Kukoč</a></li>
             </ul>
-            <form action="process-form" method="post">
+            <form action="process-form" class="form-control" method="post">
                 <div>
                     <label for="txt-Email">Enter your email to subscribe to MJ related content:&nbsp;</label>
-                    <textarea name="txt-Email"></textarea>
+                    <textarea name="txt-Email" required placeholder="johndoe@email.com" autofocus></textarea>
                 </div>
                 <div>
                     <label for="btn-Submit">Click button to subscribe:&nbsp</label>
@@ -130,24 +132,18 @@ Justin Yu
                 <li><a href="https://www.basketball-reference.com/players/j/jordami01/gamelog/1990"
                         target="_blank">1989-1990</a></li>
             </ul>
-            <form action="process-form" method="post">
+            <form action="process-form" class="form-control" method="post">
                 <div>
-                    <fieldset>
-                        <label for="necessary">Accept necessary cookies</label>
-                        <input type="radio" name="radio-cookies" id="necessary" value="Necessary cookies only">
-                        <label for="all">Accept all cookies</label>
-                        <input type="radio" name="radio-cookies" id="all" value="All cookies">
-                    </fieldset>
+                    <label for="cookie-options">Cookie Preferences</label>
+                    <select id="cookie-options">
+                        <option value="all" selected>All</option>
+                        <option value="necessary">Necessary</option>
+                    </select>
                 </div>
                 <div>
-                    <label for="select-Trivia"> Test your knowledge! &NewLine; How many rings did MJ win? </label>
-                    <select>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                        <option>6</option>
-                    </select>
+                    <button>
+                        Accept
+                    </button>
                 </div>
             </form>
         </section>
