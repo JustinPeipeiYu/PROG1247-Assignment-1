@@ -70,7 +70,7 @@ header, footer, main, aside{
 
 
 h1{
-    color:blueviolet;
+    color:white;
     font-family: fantasy;
     font-weight: 200;
     font-variant: normal;
@@ -171,6 +171,11 @@ section > blockquote{
 main blockquote{
     font-variant: small-caps;
     clear: both;
+    border: 0.15rem solid black;
+    padding: 0.5rem;
+}
+#blockquote3{
+    box-shadow:0.5rem 0.5rem grey;
 }
 /*adjacent sibiling combinator selector*/
 blockquote + p{
@@ -216,25 +221,23 @@ header{
     background-color: chocolate !important;
 }
 .container {
-    width: 29%;
+    width: 30%;
     height: 100%;
     float: right;
 }
-
 main video{
     width: 68%;
-    float: right;
+    float: left;
     height: 100%;
 }
-
 .container img{
-    display: inline;
+    width: 100%;
+    height: auto;
 }
-
 .container figcaption{
-    display: inline;
+    width: 100%;
+    font-size: 0.75rem;
 }
-
 /*rgb*/
 main > blockquote{
     background-color: rgb(198, 210, 196);
@@ -304,8 +307,12 @@ figure img{
     box-shadow: .5rem .5rem .25rem .25rem grey;
 }
 
+.quotes{
+    clear: both;
+    padding-top: 0.5rem;
+}
 
-main q{
+.quotes q{
     clear:both;
     text-align: center;
 }
