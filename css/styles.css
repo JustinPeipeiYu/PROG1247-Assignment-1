@@ -71,11 +71,14 @@ header, footer, main, aside{
 
 h1{
     color:blueviolet;
-   
+    font-family: fantasy;
+    font-weight: 200;
+    font-variant: normal;
      /*unit is relative to the current font-size*/
      font-size : 3.5em;
       /*unit is relative to the font-size set in the root element (html)*/
     font-size : 3.5rem;
+    text-align: center;
 }
 
 p{
@@ -180,6 +183,10 @@ blockquote ~ em{
 /*multple selector*/
 #quotes, h2, li, a, .aside-section{
     color : red;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 300;
+    font-variant: small-caps;
+    text-align: center;
 }
 /*psudeo-element selector*/
 a:hover{
@@ -208,11 +215,24 @@ form{
 header{
     background-color: chocolate !important;
 }
-main video{
-    clear: both;
+.container {
+    width: 29%;
+    height: 100%;
+    float: right;
 }
-main figcaption{
-    clear:both;
+
+main video{
+    width: 68%;
+    float: right;
+    height: 100%;
+}
+
+.container img{
+    display: inline;
+}
+
+.container figcaption{
+    display: inline;
 }
 
 /*rgb*/
@@ -285,14 +305,9 @@ figure img{
 }
 
 
-main img{
-    width: 30%;
-    float: right;
-}
-
 main q{
-    width: 70%;
-    float: left;
+    clear:both;
+    text-align: center;
 }
 
 footer 
